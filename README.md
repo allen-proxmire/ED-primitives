@@ -1,12 +1,14 @@
-# ED-primitives  
+# ED-primitives
 **The Axiomatic Core of Event Density**
 
-This repository is the **Constitution** of Event Density (ED).  
-It contains only the **minimal, stable ontology** of the framework: the primitives, their internal architecture, and the conceptual foundations that justify them.
+This repository is the constitutional core of Event Density (ED).
+All physics, simulations, retrodictions, and execution-level work
+live in the separate `event-density` repository.
 
-Everything else — PDEs, quantum mechanics, general relativity, platform bridges, experiments, predictions, and retrodictions — lives in the main **Event Density** research repository.
-
-This repo is intentionally **small**, **slow-changing**, and **physics-free**.
+This repo contains only the **minimal, stable ontology** of the framework:
+the primitives, their internal architecture, and the conceptual
+foundations that justify them. It is intentionally **small**,
+**slow-changing**, and **physics-free**.
 
 ---
 
@@ -14,13 +16,16 @@ This repo is intentionally **small**, **slow-changing**, and **physics-free**.
 
 The goal of `ED-primitives` is to:
 
-- **Define the primitives** of Event Density (ED‑01 through ED‑13).  
-- **Describe how they relate** and compose into higher structures.  
-- **Clarify the conceptual and philosophical foundations** of the ontology.  
-- **Provide a stable reference** that other ED work can build on without being entangled with ongoing physics development.
+- **Define the primitives** of Event Density (ED-01 through ED-13).
+- **Describe how they relate** and compose into higher structures.
+- **Clarify the conceptual and philosophical foundations** of the ontology.
+- **Provide a stable constitutional reference** that other ED work can
+  build on without being entangled with ongoing physics development.
 
-If you want to understand *what ED is*, at the level of ontology and structure, you are in the right place.  
-If you want equations, experiments, or platform-specific predictions, you are in the wrong repo.
+If you want to understand *what ED is* at the level of ontology and
+structure, you are in the right place. If you want equations,
+experiments, or platform-specific predictions, see the `event-density`
+repository.
 
 ---
 
@@ -28,7 +33,13 @@ If you want equations, experiments, or platform-specific predictions, you are in
 
 ```text
 ED-primitives/
-├── primitives/
+├── README.md                ← this file
+├── CONSTITUTION.md          ← ratified constitutional charter
+├── CHANGELOG.md             ← versioned amendment log
+├── LICENSE
+├── .gitignore
+│
+├── primitives/              ← the 13 primitives (ED-01 through ED-13)
 │   ├── 01_micro_event.md
 │   ├── 02_chain.md
 │   ├── 03_participation.md
@@ -44,71 +55,121 @@ ED-primitives/
 │   ├── 13_relational_timing.md
 │   └── README.md
 │
-├── architecture/
+├── architecture/            ← ontology-level architecture
 │   ├── architecture_overview.md
+│   ├── architecture_faq.md
+│   ├── architecture_flowcharts.md
+│   ├── architecture_glossary.md
+│   ├── architecture_minimal_examples.md
 │   ├── primitive_interactions.md
-│   └── diagrams/
+│   ├── README.md
+│   └── derived/             ← higher-order architectural concepts
+│       ├── gradient_sign_flip.md
+│       ├── motif_formation.md
+│       └── saddle_boundary_horizon.md
 │
-├── interpretations/
-│   ├── ED-interpretation.md
-│   ├── variants.md
-│   └── historical_notes.md
-│
-├── foundations/
+├── foundations/             ← philosophical grounding + constitutional memos
 │   ├── philosophical_basis.md
-│   ├── motivation.md
-│   └── conceptual_background.md
+│   ├── philosophical_background.md
+│   ├── conceptual_background.md
+│   ├── why_event_based.md
+│   ├── why_geometry_first.md
+│   ├── why_gradients.md
+│   ├── why_multiplicity.md
+│   ├── why_primitives.md
+│   ├── why_relational_timing.md
+│   ├── dimensional_atlas.md
+│   ├── form_forced_value_inherited.md
+│   ├── structural_ceiling.md
+│   ├── forced_theorems_inventory.md
+│   └── README.md
 │
-└── README.md
-
-
-
+└── interpretations/         ← ontology-level interpretive memos
+    ├── ED-interpretation.md
+    ├── ED_as_substrate_theory.md
+    ├── ED_vs_process.md
+    ├── ED_vs_relational.md
+    ├── ED_vs_other_quantum_foundations.md
+    ├── conceptual_minimalism.md
+    ├── event_based_ontology.md
+    ├── geometry_first.md
+    ├── how_to_read_ED.md
+    ├── interpretive_principles.md
+    ├── structural_realism_in_ED.md
+    ├── why_ED_is_not_field_theory.md
+    ├── why_ED_is_not_wavefunction_theory.md
+    └── README.md
+```
 
 ---
 
-# ED-primitives
-**The Axiomatic Core of Event Density**
+## The four-folder structure
 
-This repository contains the *minimal*, *stable*, and *foundational* components of the Event Density (ED) framework.  
-It is the ED Constitution — the ontology and conceptual architecture from which the full theory is built.
+### 1. `primitives/`
+The 13 ED primitives (ED-01 through ED-13). These are the axioms of the
+framework. They change rarely, and only through a numbered amendment
+recorded in `CHANGELOG.md`.
 
-## Purpose
-To define the primitives, structural relationships, and conceptual foundations of ED without including any physics, PDEs, experiments, or platform-specific derivations.
+### 2. `architecture/`
+Ontology-level architecture: how the primitives relate to one another,
+their interaction patterns, and the structural scaffolding that binds
+them. The `derived/` subfolder houses higher-order architectural
+concepts that follow from primitive composition (gradient sign flip,
+motif formation, saddle/boundary/horizon).
 
-## Contents
+### 3. `foundations/`
+Philosophical grounding, motivations, and the conceptual background
+that led to the primitive set. Also home to the constitutional memos:
+the Dimensional Atlas, the form-FORCED / value-INHERITED commitment,
+the structural ceiling, and the FORCED-theorems inventory.
 
-### 1. primitives/
-The 13 ED primitives (ED-01 through ED-13).  
-These are the axioms of the framework.  
-They change rarely, and only with strong justification.
+### 4. `interpretations/`
+Ontology-level interpretive positioning of ED, including comparison
+to neighbouring frameworks. No physics equations; only conceptual
+positioning.
 
-### 2. architecture/
-How the primitives relate to one another.  
-Structural diagrams, interaction rules, and the conceptual scaffolding that binds the ontology.
+---
 
-### 3. interpretations/
-Conceptual framing of ED.  
-How the primitives give rise to familiar physical structures (without performing any physics).
+## Relationship to the `event-density` repository
 
-### 4. foundations/
-Philosophical grounding, motivations, and the conceptual background that led to the primitive set.
+ED splits cleanly into two repositories:
 
-## What This Repo Does NOT Contain
-- No PDEs  
-- No quantum mechanics  
-- No general relativity  
-- No platform-bridge derivations  
-- No retrodictions or predictions  
-- No experiments  
-- No code  
-- No data  
+- **`ed-primitives`** (this repo) — constitution, primitives, ontology,
+  philosophical foundations, interpretive positioning. Slow-changing,
+  amendment-governed.
+- **`event-density`** — physics-sector work built on the constitution:
+  Phase-1/2/3 arcs, Arc N kernel work, FORCED theorems with proofs,
+  retrodictions, simulations, papers, diagrams. Fast-changing, normal
+  research velocity.
 
-All physics and applied theory live in the main `Event Density` repository.
+A document belongs in *this* repository if and only if it is one of:
+the thirteen primitives, ontology-level architecture or interpretation,
+foundational philosophical grounding, or a constitutional governance
+document. Everything else lives in `event-density`.
 
-## How to Use This Repo
-Start with `primitives/`.  
-Then read `architecture/` to understand how the primitives interact.  
-Use `interpretations/` and `foundations/` for conceptual clarity.
+---
 
-This repo is intentionally minimal.  
-It is the seed from which the full ED theory grows.
+## What this repo does NOT contain
+
+- No PDEs
+- No quantum mechanics or QFT derivations
+- No general relativity
+- No platform-bridge derivations
+- No retrodictions or predictions
+- No experiments
+- No code
+- No numerical data
+
+---
+
+## How to read this repo
+
+1. **`CONSTITUTION.md`** — what ED is and what it commits to.
+2. **`primitives/`** — the 13 primitive memos in numerical order.
+3. **`foundations/`** — philosophical grounding and constitutional memos.
+4. **`architecture/`** — how the primitives compose; `derived/` for
+   higher-order concepts.
+5. **`interpretations/`** — ED's positioning relative to other ontologies.
+
+This repo is intentionally minimal. It is the seed from which the full
+ED theory grows.
